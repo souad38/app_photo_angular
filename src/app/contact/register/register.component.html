@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+<div class="uk-position-center uk-overlay uk-overlay-default" id="d">
+        
+        
+    <form >
+    <div class="uk-margin">
+            <div class="uk-inline">
+                <span class="uk-form-icon" uk-icon="icon: happy"></span>
+                <input class="uk-input" type="text" name="flName" ngModel required>
+                              
+            </div>
+    </div>    
+    <div class="uk-margin">
+        <div class="uk-inline">
+        
+            <textarea class="uk-input" cols="26" rows="10" placeholder="Bio" name="bio" ></textarea>
+                          
+
+        </div>
+    </div>
+    <div class="uk-margin">
+        <div class="uk-inline">
+            <span class="uk-form-icon" uk-icon="icon: mail"></span>
+            <input class="uk-input" type="text" name="email"  ngModel email required>
+         
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <div class="uk-inline">
+            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+            <input class="uk-input" type="password" name="password"  ngModel required minlength="8">
+            
+        </div>
+    </div>
+    <div class="uk-margin">
+        <div class="uk-inline">
+            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+            <input class="uk-input" type="password" name="confirmPassword"  ngModel required minlength="8">
+           
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success" style="width: 100%;" routerLink="/login">Register</button>
+    <br>
+    <br>
+
+
+</form>
+
+
+
+</div>

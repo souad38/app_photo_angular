@@ -1,0 +1,62 @@
+<app-nav-photographie></app-nav-photographie>
+<br><br>
+<h4 style="text-align: center;">My products</h4>
+ <div class="container">
+    <div class="body">
+      <button class="btn btn-primary" type="button" style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal">Add products</button>
+      <br>
+      <br>
+        <div class="row">
+           <div class="col" >
+           
+           
+                <div class="card" style="width: 18rem;" >
+                    <img  class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text"></p>
+                    
+                      <button class="btn btn-danger">Delete</button>
+                      <button class="btn btn-info" >Update</button>
+                    </div>
+                </div>              
+          
+               
+            </div>
+            
+        </div>
+    </div>
+   
+ </div>
+
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form >
+          <div class="row">
+            <div>
+              <input type="text" class="form-control" placeholder="Title" placeholder="Title:" name="title"  ngModel>
+            </div>
+            <br>
+            <div>
+              <textarea class="form-control" cols="30" rows="10" placeholder="Description" name="description"  ngModel></textarea>
+            </div>
+            <br>
+            <form>
+              <input type="file" class="form-control" name="image" ngModel (change)="uploadImage($event)">
+            </form>
+            
+          </div>
+          <br>
+          <button class="btn btn-success">Add Product</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>

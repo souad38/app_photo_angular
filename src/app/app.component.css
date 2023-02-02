@@ -1,0 +1,8 @@
+img {
+    width: 800px;
+    height: 400px;
+    }
+    div{
+    display: grid;
+    place-items: center;
+    }

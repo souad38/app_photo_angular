@@ -1,0 +1,13 @@
+
+footer{
+    background-color: #8b2929;
+    padding:25px 100px ;
+    color:#828182;
+    display:flex;
+
+}
+footer .colonnes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
